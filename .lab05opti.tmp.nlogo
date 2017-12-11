@@ -31,18 +31,7 @@ to blur
   [
 
     set pcolor
-    (
-      (
-        neighcol * blur-percent
-      )
-      +
-      (
-        (
-          1.00 - blur-percent
-        )
-        * pcolor
-      )
-    )
+((neighcol * blur-percent)  + ((1.00 - blur-percent) * pcolor))
    ; set pcolor ( (* (item 0 phsb)
  ;   set pcolor mean []
 
